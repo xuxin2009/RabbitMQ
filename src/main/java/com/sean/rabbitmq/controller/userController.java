@@ -1,5 +1,7 @@
 package com.sean.rabbitmq.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -15,4 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class userController {
 
 
+    /**
+     * it is just a test for git change
+     * @param userId
+     * @return
+     */
+    @GetMapping("id")
+    public String getUserbyId(@PathVariable("userId")String userId)
+    {
+        return "user";
+    }
 }
