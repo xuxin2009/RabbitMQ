@@ -55,5 +55,6 @@ public class SendTopicMessageController {
 
         rabbitTemplate.convertAndSend("topicExchange","topic.woman",map);
         return "OK";
+
     }
 }
