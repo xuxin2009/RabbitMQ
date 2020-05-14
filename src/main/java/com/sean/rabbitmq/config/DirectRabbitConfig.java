@@ -45,4 +45,5 @@ public class DirectRabbitConfig {
         return BindingBuilder.bind(DirectQueue()).to(TestDirectExchange()).with("TestDirectRouting");
     }
 
+
 }
