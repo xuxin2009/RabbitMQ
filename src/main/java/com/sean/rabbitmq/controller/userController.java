@@ -22,9 +22,11 @@ public class userController {
      * @param userId
      * @return
      */
-    @GetMapping("id")
+    @GetMapping("/id")
     public String getUserbyId(@PathVariable("userId")String userId)
     {
         return "user";
     }
+
+
 }
